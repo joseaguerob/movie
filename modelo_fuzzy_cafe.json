@@ -1,0 +1,345 @@
+{
+  "inputs": {
+    "acidez": {
+      "baja": [
+        4.0,
+        4.0,
+        5.399999999999995
+      ],
+      "media": [
+        4.599999999999998,
+        5.999999999999993,
+        7.399999999999988
+      ],
+      "alta": [
+        6.599999999999991,
+        7.999999999999986,
+        7.999999999999986
+      ]
+    },
+    "cafeina": {
+      "baja": [
+        0.5,
+        0.5,
+        1.1500000000000006
+      ],
+      "media": [
+        1.0500000000000005,
+        1.5000000000000009,
+        1.9500000000000013
+      ],
+      "alta": [
+        1.8500000000000012,
+        2.450000000000002,
+        2.450000000000002
+      ]
+    },
+    "humedad": {
+      "baja": [
+        4.0,
+        4.0,
+        8.899999999999983
+      ],
+      "media": [
+        7.099999999999989,
+        10.499999999999977,
+        14.899999999999961
+      ],
+      "alta": [
+        13.099999999999968,
+        16.999999999999954,
+        16.999999999999954
+      ]
+    },
+    "aroma": {
+      "bajo": [
+        1.0,
+        1.0,
+        3.0
+      ],
+      "medio": [
+        4.0,
+        5.0,
+        7.0
+      ],
+      "alta": [
+        8.0,
+        10.0,
+        10.0
+      ]
+    }
+  },
+  "output": {
+    "calidad": {
+      "baja": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "media": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "alta": [
+        0.0,
+        0.0,
+        2.0
+      ]
+    }
+  },
+  "rules": [
+    {
+      "antecedents": {
+        "acidez": "alta",
+        "cafeina": "alta",
+        "humedad": "baja",
+        "aroma": "alta"
+      },
+      "consequent": "alta"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "alta",
+        "humedad": "baja",
+        "aroma": "alta"
+      },
+      "consequent": "alta"
+    },
+    {
+      "antecedents": {
+        "acidez": "alta",
+        "cafeina": "media",
+        "humedad": "baja",
+        "aroma": "alta"
+      },
+      "consequent": "alta"
+    },
+    {
+      "antecedents": {
+        "acidez": "alta",
+        "cafeina": "alta",
+        "humedad": "media",
+        "aroma": "alta"
+      },
+      "consequent": "alta"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "media",
+        "humedad": "media",
+        "aroma": "alta"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "alta",
+        "cafeina": "alta",
+        "humedad": "baja",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "media",
+        "humedad": "media",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "baja",
+        "cafeina": "alta",
+        "humedad": "media",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "alta",
+        "cafeina": "baja",
+        "humedad": "media",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "media",
+        "humedad": "alta",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "media",
+        "humedad": "media",
+        "aroma": "bajo"
+      },
+      "consequent": "baja"
+    },
+    {
+      "antecedents": {
+        "acidez": "baja",
+        "cafeina": "baja",
+        "humedad": "alta",
+        "aroma": "bajo"
+      },
+      "consequent": "baja"
+    },
+    {
+      "antecedents": {
+        "acidez": "baja",
+        "cafeina": "baja",
+        "humedad": "media",
+        "aroma": "bajo"
+      },
+      "consequent": "baja"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "baja",
+        "humedad": "alta",
+        "aroma": "bajo"
+      },
+      "consequent": "baja"
+    },
+    {
+      "antecedents": {
+        "acidez": "baja",
+        "cafeina": "media",
+        "humedad": "alta",
+        "aroma": "bajo"
+      },
+      "consequent": "baja"
+    },
+    {
+      "antecedents": {
+        "acidez": "baja",
+        "cafeina": "baja",
+        "humedad": "baja",
+        "aroma": "bajo"
+      },
+      "consequent": "baja"
+    },
+    {
+      "antecedents": {
+        "acidez": "baja",
+        "cafeina": "media",
+        "humedad": "media",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "baja",
+        "humedad": "media",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "media",
+        "humedad": "baja",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "alta",
+        "cafeina": "media",
+        "humedad": "media",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "alta",
+        "humedad": "media",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "media",
+        "humedad": "alta",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "baja",
+        "humedad": "baja",
+        "aroma": "medio"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "baja",
+        "humedad": "alta",
+        "aroma": "medio"
+      },
+      "consequent": "baja"
+    },
+    {
+      "antecedents": {
+        "acidez": "alta",
+        "cafeina": "alta",
+        "humedad": "alta",
+        "aroma": "alta"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "media",
+        "cafeina": "alta",
+        "humedad": "alta",
+        "aroma": "alta"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "alta",
+        "cafeina": "media",
+        "humedad": "alta",
+        "aroma": "alta"
+      },
+      "consequent": "media"
+    },
+    {
+      "antecedents": {
+        "acidez": "alta",
+        "cafeina": "alta",
+        "humedad": "alta",
+        "aroma": "medio"
+      },
+      "consequent": "baja"
+    }
+  ]
+}
